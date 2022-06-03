@@ -37,7 +37,6 @@ def main():
         data[1] = to_gmt7(data[1])
 
     # get data that contain trafic information
-    # remove hour
 
     i = 1
     for col in data_l:
@@ -56,25 +55,3 @@ def to_gmt7(twitter_date):
 
 if __name__ == '__main__':
     main()
-    # format_date = datetime.strptime(twitter_date, "%m/%d/%Y %I:%M:%S %p")
-    # timestamp = format_date.timestamp()
-    #
-    # print(timestamp)
-    # print(timestamp + 25200)
-    # print('=======================')
-    # print(format_date)
-    # print(datetime.fromtimestamp(timestamp + 25200))
-    # twdate_split = ' '.join(twitter_date.split(" ")).split()
-    #
-    # date = twdate_split[0]
-    # time = twdate_split[1]
-    # time_system = twdate_split[2]
-    #
-    # t_add = int(time.split(':')[0]) + 7
-    # time = time.replace(time.split(':')[0], str(t_add))
-    #
-    # if time_system == 'PM' and int(time.split(':')[0]) > 11 :
-    #     t_cday = time.split(':')[0]
-    #     print(t_cday)
-
-    # print(time)
